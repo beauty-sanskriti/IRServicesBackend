@@ -1,0 +1,13 @@
+{
+  "name": "ir-recruiting-suite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "iR Recruiting Platform - Multi-Package Suite (Frontend Client, Admin Portal, Backend API)",
+  "scripts": {
+    "start:backend": "cd backend && npm run start",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:admin": "cd admin && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "npm run dev:backend"
+  }
+}
