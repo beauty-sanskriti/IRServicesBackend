@@ -90,19 +90,6 @@ export default function AdminLayout() {
 
       {/* User Info & Footer */}
       <div className="p-4 border-t border-slate-200 space-y-3">
-        <a
-          href="http://localhost:5173"
-          target="_blank"
-          rel="noreferrer"
-          className="flex items-center justify-between px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 text-xs text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition"
-        >
-          <span className="flex items-center gap-2">
-            <ExternalLink className="w-3.5 h-3.5 text-brand-orange" />
-            View Website
-          </span>
-          <span className="text-[10px] bg-white text-brand-orange border border-brand-orange/30 px-1.5 py-0.5 rounded font-mono">:5173</span>
-        </a>
-
         <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-50 border border-slate-200">
           <div className="flex items-center gap-2.5 overflow-hidden">
             <div className="w-8 h-8 rounded-full bg-brand-orange/10 border border-brand-orange/30 flex items-center justify-center text-xs font-bold text-brand-orange shrink-0">
@@ -142,9 +129,8 @@ export default function AdminLayout() {
 
       {/* Mobile Slide-over Drawer */}
       <aside
-        className={`fixed inset-y-0 left-0 w-72 max-w-[85vw] bg-white z-50 flex flex-col justify-between shadow-2xl md:hidden transition-transform duration-300 ease-in-out ${
-          mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`fixed inset-y-0 left-0 w-72 max-w-[85vw] bg-white z-50 flex flex-col justify-between shadow-2xl md:hidden transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
       >
         <SidebarContent />
       </aside>

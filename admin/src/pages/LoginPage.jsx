@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import { Shield, Lock, Mail, ArrowRight, CheckCircle } from 'lucide-react';
-
 import logo from '../assets/IrServicesLogo.png';
 
 export default function LoginPage() {
@@ -94,15 +93,7 @@ export default function LoginPage() {
           </button>
         </form>
 
-        {/* Demo Credentials Box */}
-        <div className="mt-8 p-3.5 rounded-xl bg-[#FBF9F5] border border-slate-200 text-xs text-slate-600 space-y-1.5">
-          <div className="flex items-center gap-1.5 font-semibold text-slate-900">
-            <CheckCircle className="w-3.5 h-3.5 text-brand-green" />
-            Default Demo Credentials
-          </div>
-          <p><span className="text-slate-400">Email:</span> <code className="text-brand-orange font-mono">admin@irrecruiting.com</code></p>
-          <p><span className="text-slate-400">Password:</span> <code className="text-brand-orange font-mono">admin123</code></p>
-        </div>
+
       </div>
     </div>
   );
